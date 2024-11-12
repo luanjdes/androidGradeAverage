@@ -40,7 +40,12 @@ public class MainActivity extends AppCompatActivity {
         String nota3 = n3.getText().toString();
         String nota4 = n4.getText().toString();
         if(!nota1.isEmpty() && !nota2.isEmpty() && !nota3.isEmpty() && !nota4.isEmpty()){
-
+            double nn1 = Double.parseDouble(nota1);
+            double nn2 = Double.parseDouble(nota2);
+            double nn3 = Double.parseDouble(nota3);
+            double nn4 = Double.parseDouble(nota4);
+            double media = (nn1 + nn2 + nn3 + nn4)/4;
+            result.setText("A Média das notas é: " + media);
         }
 
     }
